@@ -1,12 +1,14 @@
 from faker import Faker
-
 from src.domain.models import Pets
 
 faker = Faker()
 
 
 def mock_pets() -> Pets:
-    """Mocking Pets"""
+    """Mocking Pet
+    :param - None
+    :return - Fake Pet registry
+    """
 
     return Pets(
         id=faker.random_number(digits=5),
