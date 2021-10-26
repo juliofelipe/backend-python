@@ -1,8 +1,9 @@
-from typing import Type, Dict, List
+from typing import Dict, List, Type
+
 from src.data.find_user import FindUser
 from src.data.interfaces import PetRepositoryInterface as PetRepository
+from src.domain.models import Pets, Users
 from src.domain.use_cases import RegisterPet as RegisterPetInterface
-from src.domain.models import Users, Pets
 
 
 class RegisterPet(RegisterPetInterface):

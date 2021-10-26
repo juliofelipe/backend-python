@@ -1,4 +1,5 @@
 from faker import Faker
+
 from src.domain.models import Pets
 
 faker = Faker()

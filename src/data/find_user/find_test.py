@@ -1,5 +1,7 @@
 from faker import Faker
+
 from src.infra.test import UserRepositorySpy
+
 from .find import FindUser
 
 faker = Faker()

@@ -1,7 +1,8 @@
 from typing import Dict, List, Type
+
 from src.data.interfaces import PetRepositoryInterface as PetRepository
-from src.domain.use_cases import FindPet as FindPetInterface
 from src.domain.models import Pets
+from src.domain.use_cases import FindPet as FindPetInterface
 
 
 class FindPet(FindPetInterface):

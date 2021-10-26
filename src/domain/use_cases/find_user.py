@@ -1,5 +1,6 @@
 from abc import ABC, abstractclassmethod
 from typing import Dict, List
+
 from src.domain.models import Users
 
 

@@ -1,5 +1,6 @@
 from abc import ABC, abstractclassmethod
 from typing import Dict
+
 from src.domain.models import Pets
 
 

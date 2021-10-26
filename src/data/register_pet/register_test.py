@@ -7,7 +7,7 @@ faker = Faker()
 
 
 def test_registry():
-    """Testing Registro method in RegisterPet"""
+    """Testing Registru method in RegisterPet"""
 
     pet_repo = PetRepositorySpy()
     find_user = FindUserSpy(UserRepositorySpy())
