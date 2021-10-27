@@ -1,1 +1,3 @@
-GET http://localhost:5000/api
+GET http://localhost:5000/api?name=Julio
+Content-Type: application/json
+    

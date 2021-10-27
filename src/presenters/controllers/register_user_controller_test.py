@@ -1,7 +1,9 @@
 from faker import Faker
+
 from src.data.test import RegisterUserSpy
-from src.presenters.helpers import HttpRequest
 from src.infra.test import UserRepositorySpy
+from src.presenters.helpers import HttpRequest
+
 from .register_user_controller import RegisterUserController
 
 faker = Faker()

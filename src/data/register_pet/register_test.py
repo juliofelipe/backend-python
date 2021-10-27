@@ -1,6 +1,8 @@
 from faker import Faker
-from src.infra.test import PetRepositorySpy, UserRepositorySpy
+
 from src.data.test import FindUserSpy
+from src.infra.test import PetRepositorySpy, UserRepositorySpy
+
 from .register import RegisterPet
 
 faker = Faker()

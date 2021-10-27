@@ -1,7 +1,9 @@
 from faker import Faker
+
 from src.data.test import FindPetSpy
 from src.infra.test import PetRepositorySpy
 from src.presenters.helpers import HttpRequest
+
 from .find_pet_controller import FindPetController
 
 faker = Faker()

@@ -1,5 +1,6 @@
 from typing import Dict, List
-from src.domain.models import Users, Pets
+
+from src.domain.models import Pets, Users
 from src.domain.test import mock_pets, mock_users
 
 

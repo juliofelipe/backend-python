@@ -1,9 +1,10 @@
 from faker import Faker
+
 from src.data.test import FindUserSpy
 from src.infra.test import UserRepositorySpy
 from src.presenters.helpers import HttpRequest
-from .find_user_controller import FindUserController
 
+from .find_user_controller import FindUserController
 
 faker = Faker()
 
