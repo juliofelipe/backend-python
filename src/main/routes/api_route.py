@@ -1,8 +1,12 @@
 from flask import Blueprint, jsonify, request
 
 from src.main.adapter import flask_adapter
-from src.main.composer import (find_pet_composer, find_user_composer,
-                               register_pet_composer, register_user_composer)
+from src.main.composer import (
+    find_pet_composer,
+    find_user_composer,
+    register_pet_composer,
+    register_user_composer,
+)
 
 api_routes_bp = Blueprint("api_routes", __name__)
 
@@ -18,7 +22,7 @@ def register_user():
         message = {
             "type": "users",
             "id": response.body.id,
-            "attributest": {"name": response.body.name},
+            "attributes": {"name": response.body.name},
         }
 
         return jsonify({"data": message}), response.status_code
@@ -43,7 +47,7 @@ def register_pets():
         message = {
             "type": "pets",
             "id": response.body.id,
-            "attributest": {
+            "attributes": {
                 "name": response.body.name,
                 "specie": response.body.specie,
                 "age": response.body.age,
@@ -77,7 +81,7 @@ def finder_pets():
                 {
                     "type": "pets",
                     "id": element.id,
-                    "attributest": {
+                    "attributes": {
                         "name": element.name,
                         "specie": element.specie.value,
                         "age": element.age,
@@ -114,7 +118,7 @@ def finder_users():
                 {
                     "type": "users",
                     "id": element.id,
-                    "attributest": {"name": element.name},
+                    "attributes": {"name": element.name},
                 }
             )
 

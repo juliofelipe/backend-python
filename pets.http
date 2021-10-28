@@ -1,1 +1,18 @@
-GET http://localhost:5000/api
+POST http://localhost:5000/api/pets HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Lenita",
+    "specie": "dog",
+    "age": 2,
+    "user_information": {
+        "user_id": 2
+    }
+}
+
+###
+GET http://localhost:5000/api/pets?user_id=2 HTTP/1.1
+
+
+
+
